@@ -1,15 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Data", "SolarCoffee.Data\SolarCoffee.Data.csproj", "{F49051E6-0A9D-4933-BC38-F5FD1A6ECA71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Data", "SolarCoffee.Data\SolarCoffee.Data.csproj", "{F49051E6-0A9D-4933-BC38-F5FD1A6ECA71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Services", "SolarCoffee.Services\SolarCoffee.Services.csproj", "{AF0967B4-74F3-4A22-98BB-47F7538D7AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Services", "SolarCoffee.Services\SolarCoffee.Services.csproj", "{AF0967B4-74F3-4A22-98BB-47F7538D7AFA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F49051E6-0A9D-4933-BC38-F5FD1A6ECA71} = {F49051E6-0A9D-4933-BC38-F5FD1A6ECA71}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Test", "SolarCoffee.Test\SolarCoffee.Test.csproj", "{D0C1AE9F-60E9-45E2-85AA-C24A8477068B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Test", "SolarCoffee.Test\SolarCoffee.Test.csproj", "{D0C1AE9F-60E9-45E2-85AA-C24A8477068B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Web", "SolarCoffee.Web\SolarCoffee.Web.csproj", "{A429787D-59A6-40EA-B5FD-8A8C83F55991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Web", "SolarCoffee.Web\SolarCoffee.Web.csproj", "{A429787D-59A6-40EA-B5FD-8A8C83F55991}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F49051E6-0A9D-4933-BC38-F5FD1A6ECA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +72,11 @@ Global
 		{A429787D-59A6-40EA-B5FD-8A8C83F55991}.Release|x64.Build.0 = Release|Any CPU
 		{A429787D-59A6-40EA-B5FD-8A8C83F55991}.Release|x86.ActiveCfg = Release|Any CPU
 		{A429787D-59A6-40EA-B5FD-8A8C83F55991}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A00F82F-11EA-4D44-B305-94C87AE67F9F}
 	EndGlobalSection
 EndGlobal

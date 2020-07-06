@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 <PropertyGroup>
   <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -10,7 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../SolarCoffee.Data/SolarCoffee.Data.csproj" />
+    <ProjectReference Include="..\SolarCoffee.Services\SolarCoffee.Services.csproj" />
+    <ProjectReference Include="..\SolarCoffee.Data\SolarCoffee.Data.csproj" />
   </ItemGroup>
 
 
