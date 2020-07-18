@@ -24,8 +24,10 @@ namespace SolarCoffee.Web.Controllers
         {
             _logger.LogInformation("Getting all products");
             var products = _productService.GetAllProducts();
+            
             var productViewModels = products
             .Select(ProductMapper.SerializeProductModel);
+
             return Ok(productViewModels);
         }
 
