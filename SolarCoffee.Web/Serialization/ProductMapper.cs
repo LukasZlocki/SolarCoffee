@@ -1,3 +1,4 @@
+using SolarCoffee.Data.Models;
 using SolarCoffee.Web.ViewModels;
 
 namespace SolarCoffee.Web.Serialization
@@ -21,9 +22,9 @@ namespace SolarCoffee.Web.Serialization
         }
 
  // Maps a ProductModel view model to a Product data model
-        public static Data.Models.Product SerializeProductModel(ProductModel product)
+        public static Product SerializeProductModel(ProductModel product)
         {
-            return new Data.Models.Product
+            return new Product
             {
                 Id = product.Id,
                 CreatedOn = product.CreatedOn,

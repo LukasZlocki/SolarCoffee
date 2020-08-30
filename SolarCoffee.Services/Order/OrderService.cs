@@ -94,8 +94,8 @@ namespace SolarCoffee.Services.Order
                 return new ServiceResponse<bool> {
                     IsSucces = true,
                     Data = true,
-                    Message = $"Order {order.Id} closed: Invoice paid in full."
-                    Time = DateTime.UtcNow
+                    Message = $"Order {order.Id} closed: Invoice paid in full.",
+                    Time = DateTime.UtcNow,
                 };
             }
             catch (Exception e) {
